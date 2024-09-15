@@ -9,7 +9,7 @@ import connectDB from './libs/databaseConnection.js'
 import path from 'path';
 import url from 'url';
 import gradeRoutes from './routes/gradeRoutes.js'
-import testimonialRoutes from './routes/testimonialRoutes.js' 
+import testimonialRoutes from './routes/testimonialRoutes.js'
 dotenv.config()
 
 const app = express()
@@ -24,7 +24,7 @@ app.use(express.urlencoded({ limit: '50mb', extended: true }))
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://school-website-oljl.onrender.com",
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
     credentials: true, // if your backend requires credentials
   })

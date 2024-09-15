@@ -45,7 +45,7 @@ const FeeStructureDownload = () => {
       }
 
       const { pdfPath } = selectedGradeInfo;
-      const url = `/${pdfPath}`; // Construct the URL for the PDF
+      const url = `${pdfPath}`; // Construct the URL for the PDF
 
       // Download the PDF
       const response = await axios.get(url, { responseType: 'blob' });

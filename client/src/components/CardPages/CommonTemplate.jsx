@@ -58,7 +58,6 @@ const Container = ({
             icon={card.icon}
             heading={card.heading}
             paragraph={card.paragraph}
-            cardHeight={card.cardHeight} // Pass the height prop here
           />
         ))}
       </section>
